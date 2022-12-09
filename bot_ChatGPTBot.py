@@ -13,7 +13,7 @@ openai.api_key = '1233'     #在这里输入你的API_KEY
 MyBotName = '@' + '在这里替换为你的Bot的昵称' + ' '  #在这里输入你的Bot的昵称
 @plugin_receiver.group
 @deco.ignore_botself
-@from_these_groups(718079152,1038179412)
+@from_these_groups(   )        #这里填入监听的群聊
 @these_msgtypes(MsgTypes.AtMsg)
 def main(ctx=GroupMsg):
     if MyBotName in ctx.Content.strip():
